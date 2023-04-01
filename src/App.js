@@ -1,13 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import ColorButtons from "./buttonmy";
+import {useState} from "react";
+import MyForm from "./myinput";
+import MediaCard from "./mycard";
 
 function App() {
+  const [showContent, setShowContent] =useState(false)
+  const [showInput, setShowInput] =useState(true)
+  const handleButtonClick = () => {
+
+    setShowContent(!showContent);
+    setShowInput(!showInput);
+  }
   return (
-    <div className="App">
-      <h1>
-        Dubovii Mihail Vasile  CR-203
-      </h1>
-    </div>
+      <div>
+        <div className="App">
+          <ColorButtons onClick={handleButtonClick} />
+        </div>
+        <div className="box">
+          {showContent &&<MediaCard/>}
+          {showContent &&<MediaCard/>}
+          {showContent &&<MediaCard/>}
+        </div>
+        <div className="center">
+          {showInput && <MyForm/>}
+        </div>
+      </div>
   );
 }
+
 export default App;
