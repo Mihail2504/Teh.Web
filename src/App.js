@@ -3,6 +3,7 @@ import ColorButtons from "./buttonmy";
 import {useState} from "react";
 import MyForm from "./myinput";
 import MediaCard from "./mycard";
+import TodoList from "./toDoList";
 
 function App() {
   const [showContent, setShowContent] =useState(false)
@@ -25,6 +26,7 @@ function App() {
         <div className="center">
           {showInput && <MyForm/>}
         </div>
+          <TodoList/>
       </div>
   );
 }

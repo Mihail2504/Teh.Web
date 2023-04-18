@@ -12,11 +12,11 @@ export default function MediaCard() {
             <CardMedia
                 sx={{ height: 240 }}
                 image="https://i.simpalsmedia.com/999.md/BoardImages/900x900/99f4879a7110bbc67f3a17230d903c73.jpg"
-                title="green iguana"
+                title="Utm"
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Utm
+                    UTM
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eos.
